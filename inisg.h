@@ -91,6 +91,8 @@ typedef umax ptr_t;
 #		define INISG_DB_realloc(ptr, size) INISG_DMEM(realloc)(ptr, size, __FILE__, __LINE__)
 #		undef DEBUG
 #		define DEBUG 0
+#	else
+#		define ifdebug1(code)
 #	endif /* Debug level 1 */
 #else
 #	define ifdebug1(code)
