@@ -1,5 +1,5 @@
 # cinisg
-This is a C-Addaptation of the inisg-project in C++ by [N0ffie](https://github.com/Knoficooki)
+This is a C-Addaptation of the library created for the inisg-project in C++ by [N0ffie](https://github.com/Knoficooki/inisg)
 
 ## How to use
 cinisg is a single header library,\
