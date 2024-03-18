@@ -67,7 +67,7 @@ int main(int agrc, char** argv) {
 	// every thing is stored as strings. you can format them youself.
 	inisg_AddEntry(section, "thread_count", "8");
 
-	cleans up the whole section if it exists
+	// cleans up the whole section if it exists
 	inisg_RemoveSection(ini, "empty");
 
 	printini(stdout, ini);
