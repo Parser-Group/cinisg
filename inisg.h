@@ -94,6 +94,8 @@ typedef umax ptr_t;
 #	else
 #		define ifdebug1(code)
 #	endif /* Debug level 1 */
+#else
+#	define ifdebug1(code)
 #endif
 
 
