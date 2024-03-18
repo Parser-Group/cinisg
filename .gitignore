@@ -1,19 +1,8 @@
 build/
 bin/
 
-temp/
-tmp/
-
 *.swp
 *.swo
-
-*.serverport
-*.sen.*
-*.*.sen
-*.tmp
-*.temp
-*.svrs
-*.clts
 
 .vs/
 .vscode/
