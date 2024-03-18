@@ -51,7 +51,7 @@ typedef umax ptr_t;
 */
 #if defined(INISG_DEBUG) || defined(_INISG_DEBUG)
 #	ifndef INISG_DEBUG
-#		define INISG_DEBUG
+#		define INISG_DEBUG 0
 #	endif
 #	define DEBUG INISG_DEBUG
 #endif /* defined(DEBUG) || defined(_DEBUG) */
