@@ -34,7 +34,7 @@ typedef umax ptr_t;
  * INISG_FUNC(name)
  * INISG_PUBLIC_UTIL(name)
  * INISG_PRIVATE_UTIL(name)
- * INISG_MEM(name)
+ * INISG_MEM(name)			// memory func wrappers
  * INISG_GCC(name)			// gcc funcs for msvc
  * 
  */
@@ -119,13 +119,13 @@ typedef struct INI_DATA {
 
 
 ini_t*			INISG_FUNC( parse 	) 		(const char*); 								// arg0 is a string that contains the ini in text format
-char* 	INISG_FUNC( print 	)		(const ini_t* const); 									// return the ini in text format
+char* 			INISG_FUNC( print 	)		(const ini_t* const); 						// return the ini in text format
 
-iniEntry_t* 	INISG_FUNC( GetEntry 	) 	(const iniSection_t* const, const char*);				// returns the entry in the section arg0 
+iniEntry_t* 	INISG_FUNC( GetEntry 	) 	(const iniSection_t* const, const char*);	// returns the entry in the section arg0 
 																						// with the same content in key as in arg1
 																						// if entry doesn't exist, return NULL
 
-iniSection_t* 	INISG_FUNC( GetSection 	) 	(const ini_t* const, const char*);						// returns the section in the ini structure arg0
+iniSection_t* 	INISG_FUNC( GetSection 	) 	(const ini_t* const, const char*);			// returns the section in the ini structure arg0
 																						// with the same content in section.name as in arg1
 																						// if section does not exist, return NULL
 
